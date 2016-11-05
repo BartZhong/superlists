@@ -1,0 +1,59 @@
+1478101127513	geckodriver	INFO	Listening on 127.0.0.1:46949
+1478101128505	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.QL8HvEUFdmYY
+1478101128508	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1478101128510	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35455
+1478101132425	Marionette	INFO	Listening on port 35455
+1478101134599	Marionette	INFO	startBrowser 86db7af4-2138-42c4-a78c-a23ee1ea3136
+[Child 18209] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+[Child 18209] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+1478101151709	geckodriver	INFO	Listening on 127.0.0.1:37421
+1478101152580	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.lOMM91O1kt0k
+1478101152581	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1478101152587	geckodriver::marionette	INFO	Connecting to Marionette on localhost:34927
+1478101153609	Marionette	INFO	Listening on port 34927
+1478101155003	Marionette	INFO	startBrowser dc206ce3-83cf-494c-af63-58def3f58cfb
+[Child 18303] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+[Child 18303] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+1478101210683	geckodriver	INFO	Listening on 127.0.0.1:46344
+1478101211659	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.GW8AQUpdyMVL
+1478101211662	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1478101211675	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37774
+1478101212570	Marionette	INFO	Listening on port 37774
+1478101213915	Marionette	INFO	startBrowser 21428dd3-55bf-42d7-9d92-07655a0c6b26
+[Child 18399] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+[Child 18399] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+1478101357225	geckodriver	INFO	Listening on 127.0.0.1:44110
+1478101358228	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.WjHRj4Ghd42f
+1478101358233	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1478101358240	geckodriver::marionette	INFO	Connecting to Marionette on localhost:58787
+1478101361256	Marionette	INFO	Listening on port 58787
+1478101362593	Marionette	INFO	startBrowser 445ff9cc-c040-44eb-82c3-2cd76ca3bf08
+[Child 18507] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+[Child 18507] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+1478359192349	geckodriver	INFO	Listening on 127.0.0.1:53897
+1478359193303	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.wlWrnHv9BicX
+1478359193304	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1478359193337	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37631
+1478359195518	Marionette	INFO	Listening on port 37631
+1478359197004	Marionette	INFO	startBrowser 93a7cb86-2d03-407e-8b8b-e1b7686be775
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+kbuildsycoca4 running...
+[Child 9004] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+[Child 9004] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+kbuildsycoca4 running...
+1478360218110	geckodriver	INFO	Listening on 127.0.0.1:40524
+1478360219111	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.XztWRu1ls6SK
+1478360219114	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1478360219124	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46823
+1478360223548	Marionette	INFO	Listening on port 46823
+1478360225142	Marionette	INFO	startBrowser 368f4adc-0361-49c2-b9b6-f1ee7f1c86fb
+[Child 9385] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+[Child 9385] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+1478360471583	geckodriver	INFO	Listening on 127.0.0.1:48316
+1478360472589	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.rktTwNTJ22AF
+1478360472592	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1478360472607	geckodriver::marionette	INFO	Connecting to Marionette on localhost:49899
+1478360476632	Marionette	INFO	Listening on port 49899
+1478360478127	Marionette	INFO	startBrowser bb5a0789-3521-417a-8262-29332a02442b
+[Child 9510] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
+[Child 9510] ###!!! ABORT: Aborting on channel error.: file /home/abuild/rpmbuild/BUILD/mozilla/ipc/glue/MessageChannel.cpp, line 2052
