@@ -2,9 +2,28 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import unittest
 import time
-from django.test import LiveServerTestCase
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
+import sys
+#from django.test import LiveServerTestCase
 
-class NewVistorTest(LiveServerTestCase):
+
+#class NewVistorTest(LiveServerTestCase):
+class NewVistorTest(StaticLiveServerTestCase):
+    
+    @classmethod
+    def setUpClass(cls):
+        for arg in sys.argv:
+            if 'liveserver' in arg:
+                cls.server_url = 'http://' + arg.split('=')[1]
+                return
+        super().setUpClass()
+        cls.server_url = cls.live_server_url
+        
+    @classmethod
+    def tearDownClass(cls):
+        if cls.server_url == cls.live_server_url:
+            super().tearDownClass()
+    
     
     def setUp(self):
         self.browser = webdriver.Firefox(executable_path = '/home/bart/web_dj_sample/TDD_WEB_DJANGO/geckodriver')
@@ -14,15 +33,34 @@ class NewVistorTest(LiveServerTestCase):
         self.browser.quit()
         
     def check_for_row_in_list_table(self, row_text):
+        
         table = self.browser.find_element_by_id('id_list_table')
         time.sleep(0)
         rows = table.find_elements_by_tag_name('tr')
         self.assertIn(row_text, [row.text for row in rows])
         
+    def test_layout_and_styling(self):
+        #edith access the home page
+        self.browser.get(self.server_url)
+        self.browser.set_window_size(1024, 768)
+        
+        #she see the input box is perfectly in the centern of the screen.
+        inputbox = self.browser.find_element_by_id('id_new_item')
+        self.assertAlmostEqual(
+            inputbox.location['x'] + inputbox.size['width']/2, 512, delta=5
+        )
+        #ehs create a new list and see the input box is still perfectly in the centern.
+        inputbox.send_keys('testing\n')
+        inputbox = self.browser.find_element_by_id('id_new_item')
+        self.assertAlmostEqual(
+            inputbox.location['x'] + inputbox.size['width']/2, 512, delta=5
+        )
+        
+        
     def test_can_start_a_list_and_retrieve_it_later(self):
         #Eds heard that there is a online to-do list App which is cool.
         #Eds go home page of the App.
-        self.browser.get(self.live_server_url)
+        self.browser.get(self.server_url)
         #Eds notice that both title and header of the web page consist of word 'To-DO'. 
         self.assertIn('To-Do', self.browser.title)
         header_text = self.browser.find_element_by_tag_name('h1').text
@@ -65,7 +103,7 @@ class NewVistorTest(LiveServerTestCase):
         self.browser = webdriver.Firefox(executable_path = '/home/bart/web_dj_sample/TDD_WEB_DJANGO/geckodriver')
         # Frances access the HomePage
         # Edith's list is not there
-        self.browser.get(self.live_server_url)
+        self.browser.get(self.server_url)
         page_text = self.browser.find_element_by_tag_name('body').text
         self.assertNotIn('Buy peacock feathers', page_text)
         self.assertNotIn('make a fly', page_text)
